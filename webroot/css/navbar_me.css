@@ -57,7 +57,7 @@
 .navbar li li {
   width: 100%;
   border-top: none;  
-  border-left: 4px solid transparent;  
+  border-left: 2px solid transparent;  
 }
 
 .navbar li:hover ul {

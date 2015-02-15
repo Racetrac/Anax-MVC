@@ -56,6 +56,52 @@ $app->router->add('source', function() use ($app) {
     ]);
  
 });
- 
+
+ // Route to guestbook 1
+$app->router->add('comment1', function() use ($app) {
+    
+    $app->theme->addStylesheet('css/comment.css');
+    $app->theme->setTitle("Welcome to Anax Guestbook");
+    $app->views->add('comment/index');
+
+    $app->dispatcher->forward([
+        'controller' => 'comment',
+        'action'     => 'view',
+        'params'     => ['sourcePage' => $app->request->getCurrentUrl()],
+        
+    ]);
+
+    $app->views->add('comment/form', [
+        'mail'      => null,
+        'web'       => null,
+        'name'      => null,
+        'content'   => null,
+        'output'    => null,
+    ]);
+});
+
+
+ // Route to guestbook
+$app->router->add('comment', function() use ($app) {
+    
+    $app->theme->addStylesheet('css/comment.css');
+    $app->theme->setTitle("Welcome to Anax Guestbook");
+    $app->views->add('comment/index');
+
+    $app->dispatcher->forward([
+        'controller' => 'comment',
+        'action'     => 'view',
+        'params'     => ['sourcePage' => $app->request->getCurrentUrl()],
+        
+    ]);
+
+    $app->views->add('comment/form', [
+        'mail'      => null,
+        'web'       => null,
+        'name'      => null,
+        'content'   => null,
+        'output'    => null,
+    ]);
+});
 $app->router->handle();
 $app->theme->render();

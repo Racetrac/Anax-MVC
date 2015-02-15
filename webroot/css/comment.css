@@ -1,0 +1,47 @@
+/*
+Style for comment section
+*/
+div.comments {
+       padding:10px;
+       margin-bottom:10px;
+}
+
+div.comments article {
+    margin-bottom:20px;
+}
+
+span.comment-name, span.comment-time {
+    font-size:0.8em;
+}
+
+span.comment-name {
+    color:#494;
+}
+
+span.comment-content {
+    font-size:1em;   
+    display:block;
+    margin:10px;
+}
+
+
+span.comment-ip {
+    color:#777;
+    display:block;
+    font-size:0.5em;
+}
+
+
+span.comment-edit {
+    font-size:0.7em;
+}
+
+/* New Comment form */
+div.comment-form {
+    
+}
+
+div.comment-form fieldset {
+    background:#EEE;
+    border-radius:5px;
+}

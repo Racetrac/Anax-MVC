@@ -21,6 +21,7 @@
   /*border-bottom: 4px solid transparent; */
   color: #333; 
   position: relative; 
+ 
 }
  
 .navbar a {
@@ -55,8 +56,9 @@
 }
  
 .navbar li li {
-  border-top: none;  
-  border-left: 4px solid transparent;  
+  border-top: none; 
+  border-left: 2px solid transparent;  
+
 }
 
 .navbar li:hover ul {
@@ -69,8 +71,8 @@
 }
 
 .navbar li li.selected {
-  color: #22f; 
-  border-color: #22f;
+  color: #222; 
+  border-color: #222;
 }
 
 /* Just to sho off how class works */
